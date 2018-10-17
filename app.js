@@ -17,7 +17,7 @@ if (myName.charCodeAt(0) >= 65 && myName.charCodeAt(0) <= 76) {
 }
 
 
-/* My initial attempt to parse the string, LOL
+/* My initial attempt to parse the string, LOL...
 
 const alphabetLower = "abcdefghijklmnopqrstuvwxyz";
 const alphabetUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -43,17 +43,62 @@ sayHello();
 
 function checkAge(name, age) {
     if (age < 21) {
-        console.log('Sorry', name,'you are not old enough to view this page.')
+        console.log('Sorry', name,'you are not old enough to view this page.');
     }
 }
-checkAge('Charles', 21)
-checkAge('Abby', 27)
-checkAge('James', 18)
-checkAge('John', 17)
+
+checkAge('Charles', 21);
+checkAge('Abby', 27);
+checkAge('James', 18);
+checkAge('John', 17);
+
+var veggies = ['carrots','broccoli','brussels sprouts','celery','eggplant','zucchini','squash'];
+
+for (let i = 0; i < veggies.length; ++i) {
+    console.log(veggies[i]);
+};
+
+let austin = {name: 'Austin', age: 27};
+let daniel = {name: 'Daniel', age: 30};
+let cynthia = {name: 'Cynthia', age: 18};
+let joel = {name: 'Joel', age: 20};
+let katie = {name : 'Katie', age: 21};
+
+let people = [austin, daniel, cynthia, joel, katie];
+
+for (let i = 0; i < people.length; ++i) {
+    checkAge(people[i].name, people[i].age);
+};
+
+function getLength(word) {
+    var stringLength = word.length;
+    return stringLength;
+}
+
+getLength('Hello World');
+
+console.log(getLength('Hello World'), 'characters');
 
 
+function isEven(x) {
+    if (x % 2 == 0) {
+        return true
+    } else if (Math.abs(x % 2) ==1) {
+        return false
+    } else {
+        return null
+    }
+};
+
+console.log(isEven(getLength('Hello World')))
+
+if (isEven(getLength('Hello World')) == true ) {
+    console.log('The world is nice and even!');
+} else if (isEven(getLength('Hello World')) == false) {
+    console.log('The world is an odd place!');
+} else {
+    console.log('Error');
+};
 
 
-
-console.log('')
 console.log('End Program');
