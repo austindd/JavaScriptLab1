@@ -2,12 +2,12 @@ const myName = "Austin";
 const numberOfStates = 50;
 var sum = 5 + 4;
 
-// 'L' is #11 in the alphabet.
 
+// If first letter of myName is after 'L', then "Back of the line!"
 if (myName.charCodeAt(0) >= 65 && myName.charCodeAt(0) <= 76) {
     console.log('Next!');
 } else if (myName.charCodeAt(0) >= 77 && myName.charCodeAt(0) <= 90) {
-    console.log("Back of the line!");
+    console.log("Back of the line!"); 
 } else if (myName.charCodeAt(0) >= 97 && myName.charCodeAt(0) <= 108) {
     console.log('Next!')
 } else if (myName.charCodeAt(0) >= 109 && myName.charCodeAt(0) <= 122) {
@@ -35,6 +35,24 @@ while (i < 26) {
 }
 
 */
+
+function sayHello() {
+    console.log('Hello World!');
+}
+sayHello();
+
+function checkAge(name, age) {
+    if (age < 21) {
+        console.log('Sorry', name,'you are not old enough to view this page.')
+    }
+}
+checkAge('Charles', 21)
+checkAge('Abby', 27)
+checkAge('James', 18)
+checkAge('John', 17)
+
+
+
 
 
 console.log('')
